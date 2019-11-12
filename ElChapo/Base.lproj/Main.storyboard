@@ -1,24 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="ElChapo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30g-FN-YdH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EuX-Q8-CbP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="abc-logo" translatesAutoresizingMaskIntoConstraints="NO" id="OlM-Ue-96V">
+                                                <rect key="frame" x="52" y="150" width="310.5" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="VuJ-xF-d7m"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEp-vS-D1E" customClass="ABCTextFieldView" customModule="ElChapo" customModuleProvider="target">
+                                                <rect key="frame" x="52" y="375" width="310.5" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="d8G-69-4NX"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxw-eW-pdL" customClass="ABCTextFieldView" customModule="ElChapo" customModuleProvider="target">
+                                                <rect key="frame" x="52" y="430" width="310.5" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="PDE-cp-EjN"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj0-Gw-PpY" userLabel="Login">
+                                                <rect key="frame" x="188" y="554" width="38" height="30"/>
+                                                <state key="normal" title="Login"/>
+                                                <connections>
+                                                    <action selector="loginButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rvV-CB-Rhf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="NEp-vS-D1E" firstAttribute="top" secondItem="OlM-Ue-96V" secondAttribute="bottom" constant="125" id="0zL-Oh-0n8"/>
+                                            <constraint firstItem="OlM-Ue-96V" firstAttribute="top" secondItem="EuX-Q8-CbP" secondAttribute="top" constant="150" id="8Xd-oZ-Htm"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cj0-Gw-PpY" secondAttribute="bottom" constant="50" id="F3w-RC-0Qd"/>
+                                            <constraint firstItem="zxw-eW-pdL" firstAttribute="top" secondItem="NEp-vS-D1E" secondAttribute="bottom" constant="15" id="P6N-hr-NYH"/>
+                                            <constraint firstItem="NEp-vS-D1E" firstAttribute="centerX" secondItem="EuX-Q8-CbP" secondAttribute="centerX" id="TNN-vt-WX1"/>
+                                            <constraint firstItem="OlM-Ue-96V" firstAttribute="width" secondItem="EuX-Q8-CbP" secondAttribute="width" multiplier="0.75" id="U7M-7l-fLD"/>
+                                            <constraint firstItem="NEp-vS-D1E" firstAttribute="width" secondItem="EuX-Q8-CbP" secondAttribute="width" multiplier="0.75" id="UTV-KQ-b1P"/>
+                                            <constraint firstItem="cj0-Gw-PpY" firstAttribute="top" secondItem="zxw-eW-pdL" secondAttribute="bottom" constant="84" id="Xfv-Nc-bvl"/>
+                                            <constraint firstItem="cj0-Gw-PpY" firstAttribute="centerX" secondItem="EuX-Q8-CbP" secondAttribute="centerX" id="gFc-ZE-l0J"/>
+                                            <constraint firstItem="OlM-Ue-96V" firstAttribute="centerX" secondItem="EuX-Q8-CbP" secondAttribute="centerX" id="qlX-T1-HnY"/>
+                                            <constraint firstItem="zxw-eW-pdL" firstAttribute="centerX" secondItem="EuX-Q8-CbP" secondAttribute="centerX" id="rg7-AZ-mJs"/>
+                                            <constraint firstItem="zxw-eW-pdL" firstAttribute="width" secondItem="EuX-Q8-CbP" secondAttribute="width" multiplier="0.75" id="wAK-7k-hQY"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EuX-Q8-CbP" firstAttribute="leading" secondItem="30g-FN-YdH" secondAttribute="leading" id="IZf-TK-ZxC"/>
+                                    <constraint firstItem="EuX-Q8-CbP" firstAttribute="height" secondItem="30g-FN-YdH" secondAttribute="height" priority="250" id="JOO-3W-PT9"/>
+                                    <constraint firstAttribute="trailing" secondItem="EuX-Q8-CbP" secondAttribute="trailing" id="fKY-mu-IYx"/>
+                                    <constraint firstItem="EuX-Q8-CbP" firstAttribute="width" secondItem="30g-FN-YdH" secondAttribute="width" id="rqn-5g-n4C"/>
+                                    <constraint firstItem="EuX-Q8-CbP" firstAttribute="top" secondItem="30g-FN-YdH" secondAttribute="top" id="tjM-i9-CKD"/>
+                                    <constraint firstAttribute="bottom" secondItem="EuX-Q8-CbP" secondAttribute="bottom" id="wkD-WS-4eh"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="30g-FN-YdH" secondAttribute="trailing" id="1bD-fn-sRH"/>
+                            <constraint firstItem="30g-FN-YdH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BCM-ir-fFZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="30g-FN-YdH" secondAttribute="bottom" id="EQd-fx-qhq"/>
+                            <constraint firstItem="30g-FN-YdH" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="HJf-c2-cp1"/>
+                            <constraint firstItem="30g-FN-YdH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lx0-nB-xQb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="NEp-vS-D1E" id="cXT-ZQ-zr9"/>
+                        <outlet property="loginButton" destination="cj0-Gw-PpY" id="eMg-IK-aPA"/>
+                        <outlet property="logoImageView" destination="OlM-Ue-96V" id="uZg-RP-632"/>
+                        <outlet property="passwordTextField" destination="zxw-eW-pdL" id="1t8-PY-dX9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="132.58928571428572"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="sJE-2X-D7l">
+            <objects>
+                <viewController id="XLb-4a-CTQ" customClass="HomeViewController" customModule="ElChapo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oru-RA-rhj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I4i-LB-48w">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XLb-4a-CTQ" id="seM-B9-0UT"/>
+                                    <outlet property="delegate" destination="XLb-4a-CTQ" id="cZt-FJ-THb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I4i-LB-48w" firstAttribute="top" secondItem="uak-pW-lyB" secondAttribute="top" id="Fju-AK-wWT"/>
+                            <constraint firstItem="uak-pW-lyB" firstAttribute="bottom" secondItem="I4i-LB-48w" secondAttribute="bottom" id="NeV-0z-tWG"/>
+                            <constraint firstItem="uak-pW-lyB" firstAttribute="trailing" secondItem="I4i-LB-48w" secondAttribute="trailing" id="eq2-U0-T0U"/>
+                            <constraint firstItem="I4i-LB-48w" firstAttribute="leading" secondItem="uak-pW-lyB" secondAttribute="leading" id="y9u-cK-PDe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uak-pW-lyB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AFb-5U-r9W"/>
+                    <connections>
+                        <outlet property="tableView" destination="I4i-LB-48w" id="1AH-eN-odD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXN-gc-4rZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866.6666666666667" y="132.58928571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xBG-sW-nA3">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavVC" automaticallyAdjustsScrollViewInsets="NO" id="NwJ-L1-zIQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wFu-W8-Sef">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XLb-4a-CTQ" kind="relationship" relationship="rootViewController" id="4Eq-y6-vYm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CST-9Q-C6W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956.52173913043487" y="132.58928571428572"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="abc-logo" width="2754" height="496"/>
+    </resources>
 </document>

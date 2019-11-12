@@ -8,13 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		F02D5FF423783FFC00BF9BCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D5FF323783FFC00BF9BCA /* AppDelegate.swift */; };
-		F02D5FF623783FFC00BF9BCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D5FF523783FFC00BF9BCA /* ViewController.swift */; };
+		F02D5FF623783FFC00BF9BCA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D5FF523783FFC00BF9BCA /* LoginViewController.swift */; };
 		F02D5FF923783FFC00BF9BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F02D5FF723783FFC00BF9BCA /* Main.storyboard */; };
 		F02D5FFC23783FFC00BF9BCA /* ElChapo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F02D5FFA23783FFC00BF9BCA /* ElChapo.xcdatamodeld */; };
 		F02D5FFE23783FFD00BF9BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F02D5FFD23783FFD00BF9BCA /* Assets.xcassets */; };
 		F02D600123783FFD00BF9BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F02D5FFF23783FFD00BF9BCA /* LaunchScreen.storyboard */; };
 		F02D600C23783FFD00BF9BCA /* ElChapoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D600B23783FFD00BF9BCA /* ElChapoTests.swift */; };
 		F02D601723783FFD00BF9BCA /* ElChapoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D601623783FFD00BF9BCA /* ElChapoUITests.swift */; };
+		F02D6026237840E500BF9BCA /* ABCTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D6025237840E500BF9BCA /* ABCTextFieldView.swift */; };
+		F02D60282378410800BF9BCA /* ABCTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D60272378410800BF9BCA /* ABCTextFieldView.xib */; };
+		F02D602A237842F200BF9BCA /* ABCNibVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D6029237842F200BF9BCA /* ABCNibVIew.swift */; };
+		F02D602E237844C000BF9BCA /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D602D237844C000BF9BCA /* UIView.swift */; };
+		F02D60322378467F00BF9BCA /* ABCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D60312378467F00BF9BCA /* ABCViewController.swift */; };
+		F02D60342378570D00BF9BCA /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D60332378570D00BF9BCA /* LoadingView.swift */; };
+		F02D60362378572800BF9BCA /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D60352378572800BF9BCA /* LoadingView.xib */; };
+		F02D603823786EDC00BF9BCA /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D603723786EDC00BF9BCA /* Delegates.swift */; };
+		F02D603A237B2CD900BF9BCA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D6039237B2CD900BF9BCA /* HomeViewController.swift */; };
+		F02D603D237B2D9800BF9BCA /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D603C237B2D9800BF9BCA /* InfoTableViewCell.swift */; };
+		F02D603F237B2DA900BF9BCA /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02D603E237B2DA900BF9BCA /* InfoTableViewCell.xib */; };
+		F02D6041237B340E00BF9BCA /* InfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D6040237B340E00BF9BCA /* InfoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +49,7 @@
 /* Begin PBXFileReference section */
 		F02D5FF023783FFC00BF9BCA /* ElChapo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElChapo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02D5FF323783FFC00BF9BCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F02D5FF523783FFC00BF9BCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F02D5FF523783FFC00BF9BCA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F02D5FF823783FFC00BF9BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F02D5FFB23783FFC00BF9BCA /* ElChapo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ElChapo.xcdatamodel; sourceTree = "<group>"; };
 		F02D5FFD23783FFD00BF9BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +61,18 @@
 		F02D601223783FFD00BF9BCA /* ElChapoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElChapoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F02D601623783FFD00BF9BCA /* ElChapoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElChapoUITests.swift; sourceTree = "<group>"; };
 		F02D601823783FFD00BF9BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F02D6025237840E500BF9BCA /* ABCTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCTextFieldView.swift; sourceTree = "<group>"; };
+		F02D60272378410800BF9BCA /* ABCTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ABCTextFieldView.xib; sourceTree = "<group>"; };
+		F02D6029237842F200BF9BCA /* ABCNibVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCNibVIew.swift; sourceTree = "<group>"; };
+		F02D602D237844C000BF9BCA /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F02D60312378467F00BF9BCA /* ABCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCViewController.swift; sourceTree = "<group>"; };
+		F02D60332378570D00BF9BCA /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F02D60352378572800BF9BCA /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		F02D603723786EDC00BF9BCA /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
+		F02D6039237B2CD900BF9BCA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F02D603C237B2D9800BF9BCA /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		F02D603E237B2DA900BF9BCA /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		F02D6040237B340E00BF9BCA /* InfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +123,12 @@
 		F02D5FF223783FFC00BF9BCA /* ElChapo */ = {
 			isa = PBXGroup;
 			children = (
+				F02D6042237B341E00BF9BCA /* Models */,
+				F02D60302378463700BF9BCA /* Base FIles */,
+				F02D602F2378462F00BF9BCA /* Controllers */,
+				F02D602B2378448700BF9BCA /* Helpers */,
+				F02D60242378407C00BF9BCA /* Nibs */,
 				F02D5FF323783FFC00BF9BCA /* AppDelegate.swift */,
-				F02D5FF523783FFC00BF9BCA /* ViewController.swift */,
 				F02D5FF723783FFC00BF9BCA /* Main.storyboard */,
 				F02D5FFD23783FFD00BF9BCA /* Assets.xcassets */,
 				F02D5FFF23783FFD00BF9BCA /* LaunchScreen.storyboard */,
@@ -126,6 +154,70 @@
 				F02D601823783FFD00BF9BCA /* Info.plist */,
 			);
 			path = ElChapoUITests;
+			sourceTree = "<group>";
+		};
+		F02D60242378407C00BF9BCA /* Nibs */ = {
+			isa = PBXGroup;
+			children = (
+				F02D603B237B2D4200BF9BCA /* Table Cells */,
+				F02D6025237840E500BF9BCA /* ABCTextFieldView.swift */,
+				F02D60272378410800BF9BCA /* ABCTextFieldView.xib */,
+				F02D60332378570D00BF9BCA /* LoadingView.swift */,
+				F02D60352378572800BF9BCA /* LoadingView.xib */,
+			);
+			path = Nibs;
+			sourceTree = "<group>";
+		};
+		F02D602B2378448700BF9BCA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F02D602C237844AB00BF9BCA /* Extentions */,
+				F02D603723786EDC00BF9BCA /* Delegates.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F02D602C237844AB00BF9BCA /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				F02D602D237844C000BF9BCA /* UIView.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		F02D602F2378462F00BF9BCA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F02D5FF523783FFC00BF9BCA /* LoginViewController.swift */,
+				F02D6039237B2CD900BF9BCA /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F02D60302378463700BF9BCA /* Base FIles */ = {
+			isa = PBXGroup;
+			children = (
+				F02D6029237842F200BF9BCA /* ABCNibVIew.swift */,
+				F02D60312378467F00BF9BCA /* ABCViewController.swift */,
+			);
+			path = "Base FIles";
+			sourceTree = "<group>";
+		};
+		F02D603B237B2D4200BF9BCA /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F02D603C237B2D9800BF9BCA /* InfoTableViewCell.swift */,
+				F02D603E237B2DA900BF9BCA /* InfoTableViewCell.xib */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
+		F02D6042237B341E00BF9BCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F02D6040237B340E00BF9BCA /* InfoModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +324,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02D60282378410800BF9BCA /* ABCTextFieldView.xib in Resources */,
+				F02D603F237B2DA900BF9BCA /* InfoTableViewCell.xib in Resources */,
 				F02D600123783FFD00BF9BCA /* LaunchScreen.storyboard in Resources */,
 				F02D5FFE23783FFD00BF9BCA /* Assets.xcassets in Resources */,
 				F02D5FF923783FFC00BF9BCA /* Main.storyboard in Resources */,
+				F02D60362378572800BF9BCA /* LoadingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +354,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F02D5FF623783FFC00BF9BCA /* ViewController.swift in Sources */,
+				F02D5FF623783FFC00BF9BCA /* LoginViewController.swift in Sources */,
 				F02D5FFC23783FFC00BF9BCA /* ElChapo.xcdatamodeld in Sources */,
 				F02D5FF423783FFC00BF9BCA /* AppDelegate.swift in Sources */,
+				F02D60322378467F00BF9BCA /* ABCViewController.swift in Sources */,
+				F02D6026237840E500BF9BCA /* ABCTextFieldView.swift in Sources */,
+				F02D603A237B2CD900BF9BCA /* HomeViewController.swift in Sources */,
+				F02D60342378570D00BF9BCA /* LoadingView.swift in Sources */,
+				F02D602E237844C000BF9BCA /* UIView.swift in Sources */,
+				F02D603D237B2D9800BF9BCA /* InfoTableViewCell.swift in Sources */,
+				F02D603823786EDC00BF9BCA /* Delegates.swift in Sources */,
+				F02D602A237842F200BF9BCA /* ABCNibVIew.swift in Sources */,
+				F02D6041237B340E00BF9BCA /* InfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
